@@ -6,7 +6,7 @@ body {
 }
 
 .navLink, .navLinkActive {
-    font-Family: "Fredericka The Great";
+    font-Family: "Fredericka The Great", serif;
     font-Size: 1.2rem;
     text-Decoration: none
 }
