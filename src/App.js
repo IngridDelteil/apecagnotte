@@ -1,6 +1,7 @@
 import React from "react";
 import {Routes, Route} from "react-router-dom";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Bureau from "./pages/Bureau";
 import Agenda from "./pages/Agenda";
@@ -22,6 +23,7 @@ const App = () => {
         <Route path='/rejoindre' exact element={<Rejoindre />} />
         <Route path='*' element={<Oups />} />
       </Routes>
+      <Footer />
     </div>
   );
 };
