@@ -46,7 +46,7 @@ const Header = () => {
   };
 
   return (
-    <AppBar position='static' color='secondary'>
+    <AppBar position='fixed' color='secondary'>
       <Container maxWidth='xl' sx={{padding: "0.5rem"}}>
         <Toolbar
           disableGutters
