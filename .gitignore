@@ -14,6 +14,9 @@
 # pictures
 /src/pictures
 
+# datas
+/src/datas
+
 # misc
 .DS_Store
 .env.local
