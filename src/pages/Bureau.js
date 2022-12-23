@@ -9,9 +9,8 @@ const Bureau = () => {
     <MainContainer>
       <Grid container spacing={4}>
         {dataBureau.map((member, index) => (
-          <Grid item key={index} xs={12} sm={6} md={3}>
+          <Grid item key={`${index}+'-'+${member.name}`} xs={12} sm={6} md={3}>
             <Member
-              key={index}
               name={member.name}
               job={member.job}
               picture={member.picture}
