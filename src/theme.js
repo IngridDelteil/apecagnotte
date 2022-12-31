@@ -17,6 +17,7 @@ const theme = createTheme({
       main: "#fb7185",
     },
     gray: {
+      50: "#f9fafb",
       400: "#9ca3af",
     },
   },
