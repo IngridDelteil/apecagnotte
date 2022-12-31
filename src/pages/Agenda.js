@@ -1,7 +1,8 @@
 import React from "react";
 import MainContainer from "../components/MainContainer";
 import Title from "../components/Title";
-import {Typography} from "@mui/material";
+import Event from "../components/Event";
+import {Typography, Stack} from "@mui/material";
 // datas
 import dataAgenda from "../datas/dataAgenda";
 
@@ -14,7 +15,21 @@ const Agenda = () => {
           Il n'y a aucun évènement prévu pour le moment...
         </Typography>
       ) : (
-        dataAgenda.map((rdv) => <p key={rdv.date + " " + rdv.titre}>Rdv</p>)
+        <Stack spacing={4}>
+          {dataAgenda.map((rdv) => (
+            <Event
+              key={rdv.date + " " + rdv.titre}
+              titre={rdv.titre}
+              date={rdv.date}
+              heure={rdv.heure}
+              lieu={rdv.lieu}
+              audience={rdv.audience}
+              image={rdv.image}
+            >
+              {rdv.description}
+            </Event>
+          ))}
+        </Stack>
       )}
     </MainContainer>
   );
