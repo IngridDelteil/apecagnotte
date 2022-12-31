@@ -8,7 +8,7 @@ const Title = ({children}) => {
         sx={{fontFamily: "fontDeco"}}
         color='info.main'
         component='h1'
-        variant='h5'
+        variant='body1'
       >
         {children}
       </Typography>

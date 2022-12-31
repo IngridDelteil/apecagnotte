@@ -13,11 +13,11 @@ const Member = ({name, job, picture}) => {
         sx={{fontFamily: "fontDeco"}}
         color='secondary'
         component='h2'
-        variant='h6'
+        variant='body1'
       >
         {name}
       </Typography>
-      <Typography component='p' variant='h6'>
+      <Typography component='p' variant='body1'>
         {job}
       </Typography>
     </Stack>

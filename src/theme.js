@@ -4,6 +4,7 @@ const theme = createTheme({
   typography: {
     fontFamily: "Cookie",
     fontDeco: "Fredericka The Great",
+    fontSize: 20,
   },
   palette: {
     primary: {
