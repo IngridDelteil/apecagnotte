@@ -1,7 +1,7 @@
 import React from "react";
 import MainContainer from "../components/MainContainer";
 import Title from "../components/Title";
-import Action from "../components/Action";
+import Action from "../components/ActionOrProject";
 import {Typography, Stack} from "@mui/material";
 // datas
 import dataActions from "../datas/dataActions";
@@ -19,9 +19,10 @@ const Actions = () => {
           {dataActions.map((action) => (
             <Action
               key={action.categorie + "-" + action.titre}
+              type='action'
               titre={action.titre}
               galerie={action.galerie}
-              benefices={action.benefices}
+              montant={action.benefices}
             >
               {action.description}
             </Action>
