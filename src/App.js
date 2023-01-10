@@ -1,5 +1,6 @@
 import React from "react";
 import {Routes, Route} from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -14,15 +15,17 @@ const App = () => {
   return (
     <div className='App'>
       <Header />
-      <Routes>
-        <Route path='/' exact element={<Home />} />
-        <Route path='/bureau' exact element={<Bureau />} />
-        <Route path='/agenda' exact element={<Agenda />} />
-        <Route path='/actions' exact element={<Actions />} />
-        <Route path='/projets' exact element={<Projets />} />
-        <Route path='/rejoindre' exact element={<Rejoindre />} />
-        <Route path='*' element={<Oups />} />
-      </Routes>
+      <ScrollToTop>
+        <Routes>
+          <Route path='/' exact element={<Home />} />
+          <Route path='/bureau' exact element={<Bureau />} />
+          <Route path='/agenda' exact element={<Agenda />} />
+          <Route path='/actions' exact element={<Actions />} />
+          <Route path='/projets' exact element={<Projets />} />
+          <Route path='/rejoindre' exact element={<Rejoindre />} />
+          <Route path='*' element={<Oups />} />
+        </Routes>
+      </ScrollToTop>
       <Footer />
     </div>
   );
